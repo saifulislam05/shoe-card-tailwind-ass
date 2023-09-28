@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- ------ Google fonts link ------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- ----- Fontawesome icons----- -->
+    <script src="https://kit.fontawesome.com/d521bbec8a.js" crossorigin="anonymous"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        IBMPlex: ['"IBM Plex Mono"', "monospace"],
+                    },
+                    boxShadow: {
+                        green: "8px 8px 0px 0px rgb(45,212,191)",
+                        "green-small": "4px 4px 0px 0px rgba(45,212,191,1);",
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="w-screen h-screen flex items-center justify-center font-IBMPlex">
+    <div
+        class="card w-[68rem] h-[32rem] flex flex-col px-12 pt-10 pb-14 shadow-xl bg-gradient-to-t from-black to-black to-35% from-white from-65%  ">
+        <div class="wrapper flex max-h-fit">
+            <div class="image-box w-2/6 ">
+                <img class=" shadow-green max-h-[90%] " src="/assets/shoe.png" alt="" srcset="">
+            </div>
+            
+            <div class="grow content-wrapper  flex flex-col  ml-14">
+                <div class="upper font-medium text-white ">
+                    <h1 class="text-5xl ">Retro Shoe</h1>
+                    <h2 class="text-3xl mt-6">$89.00 <span class="font-light text-[#1bc8bb] ml-2">IN STOCK</span></h2>
+                </div>
+                <div class="sizes flex mt-28 gap-8">
+                    <a href="#"
+                        class="text-3xl  w-14 h-14 bg-black text-white flex justify-center items-center shadow-green-small">XS</a>
+                    <a href="#"
+                        class="text-3xl text-gray-600 w-14 h-14  flex justify-center items-center duration-500 hover:bg-black hover:text-white hover:shadow-green-small">S</a>
+                    <a href="#"
+                        class="text-3xl text-gray-600 w-14 h-14  flex justify-center items-center duration-500 hover:bg-black hover:text-white hover:shadow-green-small">M</a>
+                    <a href="#"
+                        class="text-3xl text-gray-600 w-14 h-14  flex justify-center items-center duration-500 hover:bg-black hover:text-white hover:shadow-green-small">L</a>
+                    <a href="#"
+                        class="text-3xl text-gray-600 w-14 h-14  flex justify-center items-center duration-500 hover:bg-black hover:text-white hover:shadow-green-small">XL</a>
+                </div>
+                <div class="buttons mt-12 flex gap-8">
+                    <button
+                        class="bg-[#2dd4bf] px-10 py-4 text-2xl font-bold border-4 border-black duration-500 hover:bg-black hover:text-white hover:border-[#2dd4bf]"
+                        type="submit">BUY NOW</button>
+
+                    <button
+                        class=" px-10 py-4 text-2xl font-bold border-4 border-black duration-500 hover:bg-black hover:text-white "
+                        type="submit">ADD TO BAG</button>
+
+                    <div class="grow h-auto flex justify-center items-center">
+                        <i class="text-3xl cursor-pointer duration-300 hover:text-red-700 fa-solid fa-heart"></i>
+                    </div>
+
+                </div>
+                <p class="mt-6 ">Free Shipping on all continental US orders.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
